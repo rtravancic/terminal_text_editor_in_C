@@ -1,5 +1,11 @@
 #include <stdio.h>
+#include "curses.h"
 
 int main(void){
-    printf("Welcome!\nThis is start of my terminal text editor in C project.")
+    initscr();
+    printw("Hello, World!");
+    refresh();
+    getch();
+    endwin();
+    return 0;
 }
